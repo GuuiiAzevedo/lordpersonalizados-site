@@ -9,6 +9,9 @@
     <!-- Favicon (ícone na aba do navegador) -->
     <link rel="icon" href="fotos/ico.ico" type="image/x-icon">
     
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
         /* Estilo do corpo da página */
         body {
@@ -180,6 +183,30 @@
             text-decoration: none;
             font-size: 2rem;
         }
+
+        /* Estilo do carrossel dentro do card de produto */
+        .product .carousel {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height: 250px; /* Ajuste a altura conforme necessário */
+        }
+
+        .product .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .product .carousel-images img {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            object-fit: contain;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -193,6 +220,8 @@
         <nav>
             <a href="#produtos">Produtos</a>
             <a href="#contato">Contato</a>
+            <a href="#frete">Política de Frete</a>
+            <a href="#historia">Nossa História</a>
         </nav>
     </header>
 
@@ -200,16 +229,11 @@
     <section class="hero">
         <div class="carousel">
             <div class="carousel-images">
-                <img src="1.jpg" alt="Imagem 1">
-                <img src="8.jpg" alt="Imagem 2">
-                <img src="9.jpg" alt="Imagem 2">
-                <img src="fotos/10.jpg" alt="Imagem 2">
-                <img src="fotos/2.jpg" alt="Imagem 2">
-                <img src="fotos/3.jpg" alt="Imagem 2">
-                <img src="fotos/4.jpg" alt="Imagem 2">
-                <img src="fotos/5.jpg" alt="Imagem 2">
-                <img src="fotos/6.jpg" alt="Imagem 2">
-                
+                <img src="fotos/1.jpg" alt="Imagem 1">
+                <img src="fotos/8.jpg" alt="Imagem 2">
+                <img src="fotos/9.jpg" alt="Imagem 3">
+                <img src="fotos/10.jpg" alt="Imagem 4">
+                <img src="fotos/2.jpg" alt="Imagem 5">
             </div>
         </div>
     </section>
@@ -218,54 +242,132 @@
     <section id="produtos" class="section">
         <h2>Nossos Produtos</h2>
         <div class="products">
+            <!-- Produto 1 -->
             <div class="product">
-                <img src="fotos/2.jpg" alt="Caneca personalizada">
-                <h3>Caneca Personalizada</h3>
-                <p>Crie canecas com frases ou imagens especiais.</p>
+                <h3>Canecas e Camisetas</h3>
+                <p>Camisetas que vestem suas emoções e canecas que guardam suas histórias.</p>
+                
+                <!-- Carrossel dentro do card -->
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="fotos/caneca/1.jpg" alt="Caneca personalizada 1">
+                        <img src="fotos/caneca/2.jpg" alt="Caneca personalizada 2">
+                        <img src="fotos/caneca/3.jpg" alt="Caneca personalizada 3">
+                        <img src="fotos/caneca/4.jpg" alt="Caneca personalizada 4">
+                        <img src="fotos/caneca/5.jpg" alt="Caneca personalizada 5">
+                    </div>
+                </div>
+                <!-- Fim do carrossel -->
             </div>
+
+            <!-- Produto 2 -->
             <div class="product">
-                <img src="lembranca.jpg" alt="Lembrança de casamento">
                 <h3>Lembranças de Casamento</h3>
                 <p>Encante seus convidados com itens únicos.</p>
+                
+                <!-- Carrossel dentro do card -->
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="fotos/casamento/casamento9.jpg" alt="Lembrança de casamento 9">
+                        <img src="fotos/casamento/casamento1.jpg" alt="Lembrança de casamento 1">
+                        <img src="fotos/casamento/casamento3.jpg" alt="Lembrança de casamento 3">
+                        <img src="fotos/casamento/casamento4.jpg" alt="Lembrança de casamento 4">
+                        <img src="fotos/casamento/casamento5.jpg" alt="Lembrança de casamento 5">
+                        <img src="fotos/casamento/casamento6.jpg" alt="Lembrança de casamento 6">
+                        <img src="fotos/casamento/casamento7.jpg" alt="Lembrança de casamento 7">
+                        <img src="fotos/casamento/casamento8.jpg" alt="Lembrança de casamento 8">
+                        <img src="fotos/casamento/casamento10.jpg" alt="Lembrança de casamento 10">
+                        <img src="fotos/casamento/casamento11.jpg" alt="Lembrança de casamento 11">
+                        <img src="fotos/casamento/casamento12.jpg" alt="Lembrança de casamento 12">
+                        <img src="fotos/casamento/casamento13.jpg" alt="Lembrança de casamento 13">
+                        <img src="fotos/casamento/casamento15.jpg" alt="Lembrança de casamento 15">
+                    </div>
+                </div>
+                <!-- Fim do carrossel -->
             </div>
+
+            <!-- Produto 3 -->
             <div class="product">
-                <img src="outros.jpg" alt="Outros personalizados">
                 <h3>Outros Itens</h3>
                 <p>Surpreenda com produtos exclusivos para todas as ocasiões.</p>
+                
+                <!-- Carrossel dentro do card -->
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="fotos/outros/outros4.jpg" alt="Outro item 1">
+                        <img src="fotos/outros/outros5.jpg" alt="Outro item 2">
+                        <img src="fotos/outros/outros2.jpg" alt="Outro item 2">
+                        <img src="fotos/outros/outros3.jpg" alt="Outro item 3">
+                        <img src="fotos/outros/outros4.jpg" alt="Outro item 4">
+                        <img src="fotos/outros/outros5.jpg" alt="Outro item 5">
+                        <img src="fotos/outros/outros6.jpg" alt="Outro item 6">
+                        <img src="fotos/outros/outros7.jpg" alt="Outro item 7">
+                        <img src="fotos/outros/outros8.jpg" alt="Outro item 8">
+                        <img src="fotos/outros/outros9.jpg" alt="Outro item 9">
+                        <img src="fotos/outros/outros10.jpg" alt="Outro item 10">
+                        <img src="fotos/outros/outros11.jpg" alt="Outro item 11">
+                        <img src="fotos/outros/outros12.jpg" alt="Outro item 12">
+                        <img src="fotos/outros/outros13.jpg" alt="Outro item 13">
+                        <img src="fotos/outros/outros14.jpg" alt="Outro item 14">
+                 
+                    </div>
+                </div>
+                <!-- Fim do carrossel -->
             </div>
         </div>
+    </section>
+
+    <!-- Seção de Política de Frete -->
+    <section id="frete" class="section">
+        <h2><i class="fas fa-truck"></i> Política de Frete</h2>
+        <p>Entregas em Jundiaí e Região: Realizamos entregas em Jundiaí e nas cidades vizinhas. Para localidades a mais de 90 km de Jundiaí, o envio será feito via Correios, com o custo do frete calculado conforme peso e dimensões do pacote, ficando a carga do comprador. Também oferecemos a opção de envio através da Shopee Marketplace, garantindo praticidade e rastreamento completo do pedido.</p>
+    </section>
+
+    <!-- Seção de Nossa História -->
+    <section id="historia" class="section">
+        <h2><i class="fas fa-book-open"></i> Nossa História</h2>
+        <p>A Lord Personalizados nasceu da paixão por criar produtos únicos, que acompanham os momentos mais especiais de cada cliente. Nossa missão é trazer alegria e lembranças inesquecíveis através de itens personalizados e cheios de significado.</p>
     </section>
 
     <!-- Seção de contato com formulário -->
     <section id="contato" class="contact">
         <h2>Entre em Contato</h2>
-        <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu email" required>
-            <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+        <form action="mailto:contato@lordpersonalizados.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
     <!-- Botão do WhatsApp -->
-    <a href="https://wa.me/55971374517" class="whatsapp-btn">&#x2709;</a>
+    <a href="https://wa.me/5511971374517" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Lord Personalizados - Todos os direitos reservados</p>
+        <p>&copy; 2025 Lord Personalizados. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Script para o carrossel -->
     <script>
-        const carousel = document.querySelector('.carousel-images');
-        let index = 0;
+        // Função para controle do carrossel principal
+        const carousels = document.querySelectorAll('.carousel-images');
+        
+        carousels.forEach((carousel, index) => {
+            let currentIndex = 0;
+            const images = carousel.querySelectorAll('img');
+            const totalImages = images.length;
 
-        function showNextImage() {
-            index = (index + 1) % 8; // Número de imagens no carrossel
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-        }
+            // Função que exibe a próxima imagem
+            function showNextImage() {
+                currentIndex = (currentIndex + 1) % totalImages;
+                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
 
-        setInterval(showNextImage, 1000); // Troca a imagem a cada 3 segundos
+            // Inicializa o intervalo para cada carrossel (exibe uma nova imagem a cada 3 segundos)
+            setInterval(showNextImage, 3000);
+        });
     </script>
 </body>
 </html>
