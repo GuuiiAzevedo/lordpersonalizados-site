@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lord Personalizados oferece produtos exclusivos como canecas e lembranças personalizadas para momentos especiais.">
-    <title>Lord Personalizados - Elegância em Cada Detalhe</title>
+    <meta name="keywords" content="personalizados, canecas personalizadas, lembranças de casamento, presentes personalizados, Lord Personalizados">
+    <meta name="author" content="Lord Personalizados">
+    <meta name="robots" content="index, follow">
+    <title>Lord Personalizados - Presentes Exclusivos e Personalizados</title>
     
-    <!-- Favicon (ícone na aba do navegador) -->
-    <link rel="icon" href="fotos/ico.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="icon" href="2.png" type="image/x-icon">
     
-    <!-- Link para o Font Awesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
@@ -27,30 +30,26 @@
             background-color: #343a40;
             color: white;
             padding: 2rem;
-            display: flex;  /* Usando flexbox para alinhar itens */
-            align-items: center;  /* Alinha itens no eixo vertical */
-            justify-content: space-between;  /* Espaça logo e menu */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        /* Logo dentro do cabeçalho */
         header .logo img {
-            height: 50px;  /* Ajuste do tamanho do logo */
+            height: 50px;
         }
 
-        /* Título do cabeçalho */
         header h1 {
             margin: 0;
             font-size: 3rem;
-            flex-grow: 1;  /* Faz o título ocupar o espaço restante */
+            flex-grow: 1;
         }
 
-        /* Estilo do parágrafo no cabeçalho */
         header p {
             font-size: 1.5rem;
             margin-top: 0.5rem;
         }
 
-        /* Estilo do menu de navegação */
         nav {
             margin-top: 1rem;
         }
@@ -62,41 +61,12 @@
             font-weight: bold;
         }
 
-        /* Seção de destaque (hero) */
-        .hero {
-            text-align: center;
-            padding: 3rem 2rem;
-            background-color: #ffc107;
-            color: #343a40;
-        }
-
-        /* Estilo do carrossel */
-        .carousel {
-            position: relative;
-            max-width: 700px;
-            margin: auto;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .carousel-images {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-images img {
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        /* Estilo das seções de conteúdo */
+        /* Seção de produtos */
         .section {
             padding: 3rem;
             text-align: center;
         }
 
-        /* Estilo dos produtos */
         .products {
             display: flex;
             flex-wrap: wrap;
@@ -104,7 +74,6 @@
             gap: 2rem;
         }
 
-        /* Estilo de cada produto */
         .product {
             background: white;
             border-radius: 12px;
@@ -182,61 +151,35 @@
             cursor: pointer;
             text-decoration: none;
             font-size: 2rem;
-        }
+        }@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
 
-        /* Estilo do carrossel dentro do card de produto */
-        .product .carousel {
-            position: relative;
-            max-width: 100%;
-            margin: auto;
-            overflow: hidden;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            height: 250px; /* Ajuste a altura conforme necessário */
-        }
+    header .logo img {
+        height: 250px; /* Aumenta o tamanho do logo */
+    }
 
-        .product .carousel-images {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+    header h1,
+    header p {
+        display: none;
+    }
+}
 
-        .product .carousel-images img {
-            width: 100%;
-            height: 100%;
-            flex-shrink: 0;
-            object-fit: contain;
-            border-radius: 5px;
-        }
+        
     </style>
 </head>
 <body>
     <!-- Cabeçalho com o logo e navegação -->
     <header>
         <div class="logo">
-            <img src="fotos/LORD_LOGO.PNG" alt="Logo Lord Personalizados"> <!-- Logo à esquerda -->
+            <img src="2.png" alt="Lord Personalizados">
         </div>
         <h1>Lord Personalizados</h1>
         <p>Elegância e Exclusividade para Seus Momentos</p>
-        <nav>
-            <a href="#produtos">Produtos</a>
-            <a href="#contato">Contato</a>
-            <a href="#frete">Política de Frete</a>
-            <a href="#historia">Nossa História</a>
-        </nav>
+        
     </header>
-
-    <!-- Seção de destaque (hero) com carrossel de imagens -->
-    <section class="hero">
-        <div class="carousel">
-            <div class="carousel-images">
-                <img src="1.jpg" alt="Imagem 1">
-                <img src="8.jpg" alt="Imagem 2">
-                <img src="9.jpg" alt="Imagem 3">
-                <img src="10.jpg" alt="Imagem 4">
-                <img src="2.jpg" alt="Imagem 5">
-            </div>
-        </div>
-    </section>
 
     <!-- Seção de produtos -->
     <section id="produtos" class="section">
@@ -246,8 +189,6 @@
             <div class="product">
                 <h3>Canecas e Camisetas</h3>
                 <p>Camisetas que vestem suas emoções e canecas que guardam suas histórias.</p>
-                
-                <!-- Carrossel dentro do card -->
                 <div class="carousel">
                     <div class="carousel-images">
                         <img src="1.jpg" alt="Caneca personalizada 1">
@@ -257,15 +198,12 @@
                         <img src="5.jpg" alt="Caneca personalizada 5">
                     </div>
                 </div>
-                <!-- Fim do carrossel -->
             </div>
 
             <!-- Produto 2 -->
             <div class="product">
                 <h3>Lembranças de Casamento</h3>
                 <p>Encante seus convidados com itens únicos.</p>
-                
-                <!-- Carrossel dentro do card -->
                 <div class="carousel">
                     <div class="carousel-images">
                         <img src="casamento9.jpg" alt="Lembrança de casamento 9">
@@ -273,46 +211,26 @@
                         <img src="casamento3.jpg" alt="Lembrança de casamento 3">
                         <img src="casamento4.jpg" alt="Lembrança de casamento 4">
                         <img src="casamento5.jpg" alt="Lembrança de casamento 5">
-                        <img src="casamento6.jpg" alt="Lembrança de casamento 6">
-                        <img src="casamento7.jpg" alt="Lembrança de casamento 7">
-                        <img src="casamento8.jpg" alt="Lembrança de casamento 8">
-                        <img src="casamento10.jpg" alt="Lembrança de casamento 10">
-                        <img src="casamento11.jpg" alt="Lembrança de casamento 11">
-                        <img src="casamento12.jpg" alt="Lembrança de casamento 12">
-                        <img src="casamento13.jpg" alt="Lembrança de casamento 13">
-                        <img src="casamento15.jpg" alt="Lembrança de casamento 15">
+                        <img src="casamento100.jpg" alt="Lembrança de casamento 5">
+                        <img src="casamento102.jpg" alt="Lembrança de casamento 5">
+                        <img src="casamento101.webp" alt="Lembrança de casamento 5">
                     </div>
                 </div>
-                <!-- Fim do carrossel -->
             </div>
 
             <!-- Produto 3 -->
             <div class="product">
                 <h3>Outros Itens</h3>
                 <p>Surpreenda com produtos exclusivos para todas as ocasiões.</p>
-                
-                <!-- Carrossel dentro do card -->
                 <div class="carousel">
                     <div class="carousel-images">
                         <img src="outros4.jpg" alt="Outro item 1">
                         <img src="outros5.jpg" alt="Outro item 2">
                         <img src="outros2.jpg" alt="Outro item 2">
                         <img src="outros3.jpg" alt="Outro item 3">
-                        <img src="outros4.jpg" alt="Outro item 4">
-                        <img src="outros5.jpg" alt="Outro item 5">
-                        <img src="outros6.jpg" alt="Outro item 6">
-                        <img src="outros7.jpg" alt="Outro item 7">
-                        <img src="outros8.jpg" alt="Outro item 8">
-                        <img src="outros9.jpg" alt="Outro item 9">
-                        <img src="outros10.jpg" alt="Outro item 10">
-                        <img src="outros11.jpg" alt="Outro item 11">
-                        <img src="outros12.jpg" alt="Outro item 12">
-                        <img src="outros13.jpg" alt="Outro item 13">
-                        <img src="outros14.jpg" alt="Outro item 14">
-                 
+                        <img src="outros100.webp" alt="Outro item 4">
                     </div>
                 </div>
-                <!-- Fim do carrossel -->
             </div>
         </div>
     </section>
@@ -320,7 +238,7 @@
     <!-- Seção de Política de Frete -->
     <section id="frete" class="section">
         <h2><i class="fas fa-truck"></i> Política de Frete</h2>
-        <p>Entregas em Jundiaí e Região: Realizamos entregas em Jundiaí e nas cidades vizinhas. Para localidades a mais de 90 km de Jundiaí, o envio será feito via Correios, com o custo do frete calculado conforme peso e dimensões do pacote, ficando a carga do comprador. Também oferecemos a opção de envio através da Shopee Marketplace, garantindo praticidade e rastreamento completo do pedido.</p>
+        <p>Entregas em Jundiaí e Região: Realizamos entregas em Jundiaí e nas cidades vizinhas. Para localidades a mais de 90 km de Jundiaí, o envio será feito via Correios, com o custo do frete calculado conforme peso e dimensões do pacote, ficando a carga do comprador.</p>
     </section>
 
     <!-- Seção de Nossa História -->
@@ -332,7 +250,7 @@
     <!-- Seção de contato com formulário -->
     <section id="contato" class="contact">
         <h2>Entre em Contato</h2>
-        <form action="mailto:contato@lordpersonalizados.com" method="post" enctype="text/plain">
+        <form action="mailto:gui.domingues.azevedo@gmail.com" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Seu Nome" required>
             <input type="email" name="email" placeholder="Seu E-mail" required>
             <textarea name="message" placeholder="Sua Mensagem" required></textarea>
@@ -351,25 +269,18 @@
     </footer>
 
     <script>
-        // Função para controle do carrossel principal
-        const carousels = document.querySelectorAll('.carousel-images');
-        
-        carousels.forEach((carousel, index) => {
-            let currentIndex = 0;
-            const images = carousel.querySelectorAll('img');
-            const totalImages = images.length;
-
-            // Função que exibe a próxima imagem
-            function showNextImage() {
-                currentIndex = (currentIndex + 1) % totalImages;
-                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-
-            // Inicializa o intervalo para cada carrossel (exibe uma nova imagem a cada 3 segundos)
-            setInterval(showNextImage, 3000);
+        // Função para controle do carrossel
+        const carousels = document.querySelectorAll('.carousel');
+        carousels.forEach(carousel => {
+            let index = 0;
+            const images = carousel.querySelectorAll('.carousel-images img');
+            setInterval(() => {
+                images[index].style.display = 'none';
+                index = (index + 1) % images.length;
+                images[index].style.display = 'block';
+            }, 3000);
         });
     </script>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FNVHV1W8G"></script>
 <script>
@@ -380,6 +291,5 @@
   gtag('config', 'G-9FNVHV1W8G');
 </script>
 
-    
 </body>
 </html>
